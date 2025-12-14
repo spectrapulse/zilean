@@ -15,6 +15,7 @@ RUN apt-get update
 RUN apt-get install -yqq \
     python3.11 \
     python3-pip \
+    python3.11-lib2to3 \
     curl \
     libicu72 \
     && ln -sf python3 /usr/bin/python
