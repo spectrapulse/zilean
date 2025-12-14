@@ -11,7 +11,7 @@ RUN dotnet publish -c Release --no-restore -a $TARGETARCH -o /app/out
 
 # Run Stage
 FROM mcr.microsoft.com/dotnet/aspnet:9.0-bookworm-slim
-RUN apt-update
+RUN apt-get update
 RUN apt-get install -yqq \
     python3.11 \
     python3-pip \
